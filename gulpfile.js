@@ -72,7 +72,7 @@ gulp.task('css',['less'],function(){
 });
 //5.html压缩任务
 gulp.task('html', function() {
-  return gulp.src('index.html')
+  return gulp.src('*.html')
     .pipe($.htmlmin({collapseWhitespace: true,removeComments:true}))
     .pipe(gulp.dest('dist'))
     .pipe($.connect.reload())
@@ -82,7 +82,7 @@ gulp.task('html', function() {
 gulp.task('hotReload',['default'], function () {
   $.connect.server({
     root: 'dist', //根目录路径
-    port: 8001,   //开启服务器的端口号
+    port: 4000,   //开启服务器的端口号
     livereload: true   //热更新：实时更新
   });
   //监听的任务
@@ -90,7 +90,7 @@ gulp.task('hotReload',['default'], function () {
   gulp.watch('src/less/*.less',['css']);  //监听指定文件，一旦发生改变，就会调用执行后面的任务
   gulp.watch('index.html',['html']);  //监听指定文件，一旦发生改变，就会调用执行后面的任务
   //8.自动打开指定网页
-  open('http:localhost:8001');
+  open('http:localhost:4000');
 });
 
 //3、应用任务

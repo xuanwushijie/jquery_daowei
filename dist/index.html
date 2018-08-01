@@ -1,1 +1,64 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Title</title><link rel="stylesheet" href="css/dist.min.css"></head><body><div id="div1" class="index1">1111</div><div id="div2" class="index2">2222</div><script src="dist/min.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Title</title><style>body #header{width: 100%;height: 70px;padding: 2.5px 0;box-sizing: border-box;background-color: #fff;position: fixed;top: 0;
+      left:0;z-index: 99}</style><link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/dist.min.css"></head><body><header id="header"><div class="headerContainer"><div class="logoContainer"><img src="http://www.daoway.cn/pcimages/logo@2x.png" class="img-responsive logo-fixed" alt="logo" width="280" height="40"></div><div class="headerNav"><ul><li class="position"><a href="javascript:;"><img src="image/citypoint.png" alt=""> <span>北京</span> <span>切换城市</span></a></li><li class="on"><a href="javascript:;"><span>首页</span></a></li><li><a href="javascript:;"><span>到位APP</span></a></li><li><a href="./services.html"><span>服务商</span></a></li><li><a href="javascript:;"><span>商家入驻</span></a></li><li><a href="javascript:;"><span>关于我们</span></a></li><li class="login"><a href="javascript:;"><span>商家登录</span></a></li></ul></div></div></header><div class="swiper"><div class="container"><div class="lunbo-container"><div class="hd"><ul class=""><li class="bullet"></li><li class="bullet"></li><li class="bullet"></li></ul><div class="bullet-bg"></div></div><ul class="bd"><li><a href="##" target="_blank"><img src="image/banner1.jpg" class="img100"></a></li><li><a href="##" target="_blank"><img src="image/banner2.jpg" class="img100"></a></li><li><a href="##" target="_blank"><img src="image/banner3.jpg" class="img100"></a></li></ul></div><div class="banner-nav"><div class="ulContainer"><ul class="ullist"></ul></div></div></div></div><div class="boxWrap"></div><div class="baozhang"><h2>到位<span>服务</span>保障</h2><p>到位平台担保交易安全，交易未成功100%退款</p><ul><li><span class="iconback"></span> <span class="txt">优选服务</span></li><li><span class="iconback"></span> <span>全程保障</span></li><li><span class="iconback"></span> <span>安全无忧</span></li></ul></div><footer class="hotCity"><dl><dt>热门城市</dt><dd><a href="http://bj.daoway.cn">北京</a> <a href="http://sh.daoway.cn">上海</a> <a href="http://gz.daoway.cn">广州</a> <a href="http://sz.daoway.cn">深圳</a> <a href="http://cd.daoway.cn">成都</a> <a href="http://tj.daoway.cn">天津</a> <a href="http://nj.daoway.cn">南京</a> <a href="http://hz.daoway.cn">杭州</a> <a href="http://cq.daoway.cn">重庆</a> <a href="http://su.daoway.cn">苏州</a> <a href="http://wh.daoway.cn">武汉</a> <a href="http://cs.daoway.cn">长沙</a> <a href="http://jn.daoway.cn">济南</a> <a href="http://zz.daoway.cn">郑州</a> <a href="http://xa.daoway.cn">西安</a> <a href="http://sy.daoway.cn">沈阳</a> <a href="http://fz.daoway.cn">福州</a> <a href="http://xm.daoway.cn">厦门</a> <a href="http://nc.daoway.cn">南昌</a> <a href="http://hf.daoway.cn">合肥</a> <a href="http://nb.daoway.cn">宁波</a> <a href="http://wx.daoway.cn">无锡</a> <a href="http://qd.daoway.cn">青岛</a> <a href="http://dl.daoway.cn">大连</a> <a href="http://dg.daoway.cn">东莞</a> <a href="http://fs.daoway.cn">佛山</a> <a href="http://sjz.daoway.cn">石家庄</a> <a href="http://hrb.daoway.cn">哈尔滨</a> <a href="http://ty.daoway.cn">太原</a> <a href="http://km.daoway.cn">昆明</a> <a href="http://gy.daoway.cn">贵阳</a> <a href="http://nn.daoway.cn">南宁</a> <a href="http://wz.daoway.cn">温州</a></dd></dl></footer><div class="teamwork"><p>合作伙伴</p><ul><li><img src="image/qiaomao.png" alt=""></li><li><img src="image/qiaomao.png" alt=""></li><li><img src="image/qiaomao.png" alt=""></li><li><img src="image/meidao.jpg" alt=""></li><li><img src="image/qiaomao.png" alt=""></li><li><img src="image/lairen.jpg" alt=""></li><li><img src="image/guanjia.jpg" alt=""></li><li><img src="image/qiaomao.png" alt=""></li><li><img src="image/qiaomao.png" alt=""></li></ul><ul><li><img src="image/qiaomao.png" alt=""></li><li><img src="image/qiaomao.png" alt=""></li><li><img src="image/meidao.jpg" alt=""></li><li><img src="image/qiaomao.png" alt=""></li><li><img src="image/lairen.jpg" alt=""></li><li><img src="image/guanjia.jpg" alt=""></li><li><img src="image/qiaomao.png" alt=""></li><li><img src="image/lairen.jpg" alt=""></li><li><img src="image/guanjia.jpg" alt=""></li></ul></div><div class="beian"><p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</p></div></body><script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script><script type="text/javascript" src="http://www.superslide2.com/SuperSlide.2.1.2/jquery.SuperSlide.2.1.2.js"></script><script type="text/javascript" src="js/template.js"></script><script type="text/javascript">$(function () {
+    $.get('http://localhost:3000/index', function (data) {
+      console.log('111', data)
+      $('.swiper .container .banner-nav .ulContainer .ullist').html(template('temp', {data: data}))
+      $('.boxWrap').html(template('temp1', {data: data}))
+    })
+    var $header = $('#header');
+    $('body').scroll(function () {
+      console.log(11123456)
+      if ($(this).scrollTop() > 70) {
+        $header.addClass('on');
+      } else {
+        $header.removeClass('on');
+      }
+    })
+  })</script><script id="temp" type="text/html">{{each data}}
+  <li class="navname">
+    <a href="javascript:;">
+      <span>{{$value.serviceIndex}}</span>
+      <span class="icon"></span>
+    </a>
+    <ul>
+      {{each $value.serviceType}}
+      <li class="navItem">
+        <span>{{$value}}</span>
+      </li>
+      {{/each}}
+    </ul>
+  </li>
+  {{/each}}</script><script id="temp1" type="text/html">{{each data}}
+  <div class="box1">
+    <div class="box1Container">
+      <div class="box1Content">
+        <div class="upper">
+          <h2>{{$value.serviceIndex}}</h2>
+          <ul>
+            {{each $value.serviceType}}
+            <li>
+              <span>{{$value}}</span>
+            </li>
+            {{/each}}
+          </ul>
+          <p class="moreServe"> 更多服务> </p>
+        </div>
+        <div class="down">
+          <div class="row">
+            {{each $value.shopList}}
+            <div class="ServiceBorder">
+              <img src={{$value.imgUrl}} alt="">
+              <p class="serviceName">{{$value.serviceName}}</p>
+              <p class="description">{{$value.description}}</p>
+              <div>
+                <span class="price"><span class="num">{{$value.price}}</span>元/小时</span>
+                <span class="moreInfo">查看详情</span>
+              </div>
+            </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}</script></html>
